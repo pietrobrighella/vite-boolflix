@@ -5,8 +5,16 @@
 </template>
 
 <script>
+import { store } from './store';
   export default {
-    
+    data() {
+      return {
+        store,
+      }
+    },
+    mounted() {
+      console.log(store.getMovie())
+    },
   }
 </script>
 
